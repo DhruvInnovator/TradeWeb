@@ -8,6 +8,7 @@ function InfoPage() {
   return (
     <div className='p-12'>
       <div className="w-full">
+        <h1 className='text-6xl font-bold text-gray-800 m-4 pb-4 font-sans text-center'>Dive Into the quality Products</h1>
         <AspectRatio ratio={22 / 9}>
           <img
             src="https://images.pexels.com/photos/7130535/pexels-photo-7130535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
