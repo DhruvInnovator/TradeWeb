@@ -6,15 +6,14 @@ import Link from 'next/link';
 import { BoxIcon, HomeIcon, MenuIcon, PhoneIcon, X } from 'lucide-react';
 import Image from 'next/image';
 import { FaMagnifyingGlass } from 'react-icons/fa6';
-import { Phone } from 'lucide';
-
-const onClick = () => {
-  console.log("clicked");
-  alert("clicked");
-};
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeButton, setActiveButton] = useState<string | null>(null); // State to track the active button
+
+  const handleButtonClick = (buttonName: string) => {
+    setActiveButton(buttonName); // Set the clicked button as active
+  };
 
   return (
     <div className='relative w-full flex-auto bg-slate-200 z-50'>
@@ -22,16 +21,24 @@ function Navbar() {
         <div className='h-24 w-28 flex items-center justify-start'>
           <Image src="/logo.png" alt="logo" width={200} height={200} className="transform transition-transform duration-300 hover:scale-110" />
         </div>
-        <div className='hidden items-center gap-2 overflow-hidden cursor-pointer rounded-lg shadow-sm sm:flex'>
-            <Button variant={'secondary'} className='px-4 py-2 rounded-lg '>
-              Start Trading
-            </Button>
 
-            <div className='w-4px h-full bg-gray-300'></div>
-
-            <Button onClick={onClick} variant={'ghost'} className='px-4 '>
-              Login
-            </Button>
+        {/* Toggle Button with Yellow Color Shift */}
+        <div className='hidden items-center p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm sm:flex'>
+          <Button
+            variant={activeButton === 'trading' ? 'secondary' : 'default'}
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'trading' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
+            onClick={() => handleButtonClick('trading')}
+          >
+            Start Trading
+          </Button>
+          <div className='w-4px h-full bg-gray-300'></div>
+          <Button 
+            variant={activeButton === 'login' ? 'secondary' : 'ghost'}
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'login' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
+            onClick={() => handleButtonClick('login')}
+          >
+            Login
+          </Button>
         </div>
 
         {/* Hamburger Menu Icon (Visible on mobile) */}
@@ -43,21 +50,21 @@ function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className='hidden text-lg md:flex flex-row items-center justify-end gap-6'>
-          <Link href="/home" className="relative group text-black hover:text-black pb-1">
+          <Link href="/home" className="relative group text-center text-black hover:text-black pb-1">
             Home
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-orange-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+            <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'home' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
           <Link href="/about" className="relative group text-black hover:text-black pb-1">
             About
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-orange-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+            <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'about' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
           <Link href="/products" className="relative group text-black hover:text-black pb-1">
             Products
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-orange-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+            <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'products' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
           <Link href="/contact" className="relative group text-black hover:text-black pb-1">
             Contact
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-orange-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+            <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'contact' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
         </div>
       </div>
@@ -106,6 +113,25 @@ function Navbar() {
               </a>
             </div>
           </div>
+        </div>
+        <div className='sm:hidden items-center bg-gray-300 p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm '>
+            <Button
+              variant={activeButton === 'trading' ? 'secondary' : 'default'}
+              className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'trading' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
+              onClick={() => handleButtonClick('trading')}
+            >
+              Start Trading
+            </Button>
+
+            <div className='w-4px h-full bg-gray-300'></div>
+
+            <Button
+              variant={activeButton === 'login' ? 'secondary' : 'ghost'}
+              className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'login' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
+              onClick={() => handleButtonClick('login')}
+            >
+              Login
+            </Button>
         </div>
       </div>
 

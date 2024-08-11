@@ -3,6 +3,8 @@
 import { AspectRatio } from '@radix-ui/react-aspect-ratio';
 import React from 'react';
 import { Button } from './ui/button'; // Assuming you have a Button component available
+import { FaArrowRight } from 'react-icons/fa6';
+import { Ghost } from 'lucide-react';
 
 function InfoPage() {
   return (
@@ -19,8 +21,8 @@ function InfoPage() {
       </div>
 
       <div className="mt-8 space-y-6">
-        <h2 className="text-3xl font-bold text-gray-800">
-          Elevate Your Culinary Experience
+        <h2 className="text-4xl font-bold text-gray-800 ">
+          <span className='text-primary text-6xl'>Elevate </span> <br />Your Culinary Experience <FaArrowRight />
         </h2>
         <p className="text-lg text-gray-600">
           Discover our premium collection of crockery and kitchenware that blends style with functionality. Perfect for every kitchen, our products are designed to make every meal an extraordinary experience.
@@ -49,6 +51,12 @@ function InfoPage() {
             Rated 5 stars by our customers, we are committed to providing the best shopping experience and quality products.
           </p>
         </div>
+          
+      </div>
+      <div className='flex justify-center m-4'>
+        <Button variant="outline">
+          Learn More...
+        </Button>
       </div>
     </div>
   );

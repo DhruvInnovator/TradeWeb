@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
-import HersoSection from "@/components/HeroSection";
 import HeroSection from "@/components/HeroSection";
 import InfoPage from "@/components/InfoPage";
+import MaxWidthWrapper from "@/components/wrappers/MaxWidthWrapper";
+import DisplayPage from "@/components/DisplayPage";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <Navbar/>
     <HeroSection />
     <InfoPage />
+    <DisplayPage />
     </main>
   );
 }
