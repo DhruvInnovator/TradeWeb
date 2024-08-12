@@ -16,25 +16,25 @@ function Navbar() {
   };
 
   return (
-    <div className='relative w-full flex-auto bg-slate-200 z-50'>
-      <div className='flex flex-row items-center justify-between px-4 py-4'>
+    <div className='relative h-16 w-full flex-auto justify-center bg-slate-100 z-50'>
+      <div className='flex h-16 flex-row items-center justify-between p-2'>
         <div className='h-24 w-28 flex items-center justify-start'>
           <Image src="/logo.png" alt="logo" width={200} height={200} className="transform transition-transform duration-300 hover:scale-110" />
         </div>
 
         {/* Toggle Button with Yellow Color Shift */}
-        <div className='hidden items-center p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm sm:flex'>
+        <div className='hidden items-center bg-primary p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm sm:flex'>
           <Button
             variant={activeButton === 'trading' ? 'secondary' : 'default'}
-            className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'trading' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'trading' ? ' text-black' : ' text-black'}`}
             onClick={() => handleButtonClick('trading')}
           >
             Start Trading
           </Button>
-          <div className='w-4px h-full bg-gray-300'></div>
+          <div className='w-6px h-full bg-gray-300'></div>
           <Button 
-            variant={activeButton === 'login' ? 'secondary' : 'ghost'}
-            className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'login' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
+            variant={activeButton === 'login' ? 'secondary' : 'default'}
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'login' ? ' text-black' : ' text-black'}`}
             onClick={() => handleButtonClick('login')}
           >
             Login
@@ -49,8 +49,8 @@ function Navbar() {
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className='hidden text-lg md:flex flex-row items-center justify-end gap-6'>
-          <Link href="/home" className="relative group text-center text-black hover:text-black pb-1">
+        <div className='hidden text-sm md:flex flex-row items-center justify-end gap-6'>
+          <Link href="/" className="relative group text-center text-black hover:text-black pb-1">
             Home
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'home' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
@@ -58,8 +58,8 @@ function Navbar() {
             About
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'about' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
-          <Link href="/products" className="relative group text-black hover:text-black pb-1">
-            Products
+          <Link href="/services" className="relative group text-black hover:text-black pb-1">
+            Services
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'products' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
           <Link href="/contact" className="relative group text-black hover:text-black pb-1">
@@ -76,7 +76,7 @@ function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center space-y-6 py-6">
-          <Link href="/home" className="flex items-center gap-4 text-black hover:text-orange-500">
+          <Link href="/" className="flex items-center gap-4 text-black hover:text-orange-500">
             <HomeIcon className="w-6 h-6" />
             Home
           </Link>
@@ -84,9 +84,9 @@ function Navbar() {
             <FaMagnifyingGlass className="w-6 h-6" />
             About
           </Link>
-          <Link href="/products" className="flex items-center gap-4 text-black hover:text-orange-500">
+          <Link href="/services" className="flex items-center gap-4 text-black hover:text-orange-500">
             <BoxIcon className="w-6 h-6" />
-            Products
+            Services
           </Link>
           <Link href="/contact" className="flex items-center gap-4 text-black hover:text-orange-500">
             <PhoneIcon className="w-6 h-6" />
@@ -114,7 +114,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className='sm:hidden items-center bg-gray-300 p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm '>
+        {/* <div className='sm:hidden items-center md:bottom-2 bg-gray-300 p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm '>
             <Button
               variant={activeButton === 'trading' ? 'secondary' : 'default'}
               className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'trading' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-black'}`}
@@ -132,7 +132,7 @@ function Navbar() {
             >
               Login
             </Button>
-        </div>
+        </div> */}
       </div>
 
       {/* Background Blur (When Sidebar is Open) */}

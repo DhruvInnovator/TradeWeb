@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Button } from './ui/button';
-import { CiStar } from "react-icons/ci";
 import { FaStar, FaStarHalf } from 'react-icons/fa';
 import { useToast } from "@/components/ui/use-toast";
 
@@ -37,7 +36,6 @@ function HeroSection() {
         </h1>
         <div className="mb-4 md:mb-0">
           <div className='relative flex justify-center mt-8 gap-1 text-white z-10'>
-            <FaStar/>
             <FaStar/>
             <FaStar/>
             <FaStar/>

@@ -5,8 +5,7 @@ function DisplayPage() {
     <div className='p-5'>
       <section className="relative w-full py-20 md:p-24 lg:p-32 overflow-hidden rounded-2xl " style={{ backgroundImage: 'url(/back5.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-20 z-20"></div>
-      
+      <div className="absolute inset-0 bg-black bg-opacity-30 z-20"></div>
       <div className="relative z-20 container grid max-w-5xl items-center justify-center gap-6 px-4 text-center md:gap-8 md:px-6 lg:grid-cols-2 lg:text-left xl:max-w-6xl xl:gap-10">
         <div className="space-y-4 md:space-y-6">
           <div className="space-y-3 font-bold">
@@ -18,7 +17,7 @@ function DisplayPage() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 xl:gap-2">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-1 lg:grid-cols-2 xl:gap-x-16 ">
           <img
             src="/image1.jpg" // Ensure these paths are correct
             width={600}
@@ -31,7 +30,7 @@ function DisplayPage() {
             width={300}
             height={300}
             alt="Culinary Dish"
-            className="aspect-square overflow-hidden rounded-xl object-cover"
+            className="aspect-square overflow-hidden rounded-xl mt-16 object-cover"
           />
           <img
             src="/image3.jpg" // Ensure these paths are correct
@@ -45,7 +44,7 @@ function DisplayPage() {
             width={300}
             height={300}
             alt="Culinary Dish"
-            className="aspect-square overflow-hidden rounded-xl object-cover"
+            className="aspect-square overflow-hidden rounded-xl mt-16 object-cover"
           />
         </div>
       </div>
