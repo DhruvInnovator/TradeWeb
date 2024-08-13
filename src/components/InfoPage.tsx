@@ -32,7 +32,7 @@ function InfoPage() {
         </Button>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-bold text-gray-800">Quality Craftsmanship</h3>
           <p className="mt-2 text-gray-600">
@@ -51,9 +51,14 @@ function InfoPage() {
             Rated 5 stars by our customers, we are committed to providing the best shopping experience and quality products.
           </p>
         </div>
-          
+        <div className='bg-white p-6 rounded-lg shadow-lg'>
+        <h3 className="text-xl font-bold text-gray-800">Customer Satisfaction</h3>
+          <p className="mt-2 text-gray-600">
+            Rated 5 stars by our customers, we are committed to providing the best shopping experience and quality products.
+          </p>
+        </div>  
       </div>
-      <div className='flex justify-center m-4'>
+      <div className='flex py-4 justify-center m-4'>
         <Link href='/products'>
         <Button variant="outline">
           Learn More...

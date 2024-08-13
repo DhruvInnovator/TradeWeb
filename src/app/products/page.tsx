@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
+import { ShoppingCart } from 'lucide-react';
 import Link from "next/link"
 import React from 'react';
 
@@ -41,7 +42,7 @@ function Page() {
                 {product.price && (
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-lg font-bold">{product.price}</span>
-                    <Button size="sm">Add to Cart</Button>
+                    <Button size="sm"><ShoppingCart /></Button>
                   </div>
                 )}
               </div>
@@ -77,7 +78,7 @@ function Page() {
                   <p className="mt-2 text-muted-foreground">{product.description}</p>
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-lg font-bold">{product.price}</span>
-                    <Button size="sm">Add to Cart</Button>
+                    <Button size="sm"><ShoppingCart /></Button>
                   </div>
                 </div>
               </div>

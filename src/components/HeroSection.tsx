@@ -10,8 +10,8 @@ function HeroSection() {
   const { toast } = useToast();
 
   return (
-    <div className='p-4'>
-      <section className="relative w-full py-18 md:py-32 lg:py-40 bg-cover bg-center rounded-2xl overflow-hidden" style={{ backgroundImage: 'url(/crockery.jpg)' }}>
+    <div className='p-2 py-20'>
+      <section className="relative w-full py-18 md:py-32 lg:py-30 bg-fit bg-cover bg-no-repeat bg-center rounded-2xl overflow-hidden" style={{ backgroundImage: 'url(/crockery.jpg)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative container flex flex-col items-center justify-center space-y-6 text-white z-10">
           <h1 className="text-5xl px-6 py-8 font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl sm:p-8">

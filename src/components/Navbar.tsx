@@ -14,14 +14,20 @@ function Navbar() {
   };
 
   return (
-    <div className='relative h-16 w-full flex-auto justify-center bg-gray-100 z-50'>
-      <div className='flex h-16 flex-row items-center justify-between p-2'>
+    <div className=' relative h-16 w-full flex-auto md:fixed  z-50'>
+      <div className='flex h-16 flex-row items-center relative justify-between p-2 bg-white bg-opacity-20 backdrop-blur-lg shadow-lg rounded-lg'>
         <div className='h-24 w-28 flex items-center justify-start'>
-          <Image src="/logo.png" alt="logo" width={200} height={200} className="transform transition-transform duration-300 hover:scale-110" />
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={200}
+            height={200}
+            className="transform transition-transform duration-300 hover:scale-110"
+          />
         </div>
 
         {/* Toggle Button with Yellow Color Shift */}
-        <div className='hidden items-center bg-primary p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm sm:flex'>
+        <div className='absolute left-1/2 transform -translate-x-1/2 hidden items-center bg-primary p-1 gap-1 overflow-hidden cursor-pointer rounded-lg shadow-sm sm:flex'>
           <Button
             variant={activeButton === 'trading' ? 'secondary' : 'default'}
             className={`px-4 py-2 rounded-lg transition-colors duration-300 ${activeButton === 'trading' ? ' text-black' : ' text-black'}`}
@@ -43,7 +49,7 @@ function Navbar() {
         <MobMenu />
         
         {/* Desktop Navigation Links */}
-        <div className='hidden text-sm md:flex flex-row items-center justify-end gap-6'>
+        <div className='hidden text-md md:flex flex-row items-center justify-end gap-6'>
           <Link href="/" className="relative group text-center text-black hover:text-black pb-1">
             Home
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'home' ? 'w-full' : 'group-hover:w-full'}`}></span>
