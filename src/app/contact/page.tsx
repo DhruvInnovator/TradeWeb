@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { toast } from "@/components/ui/use-toast";
+import { Dirent } from "fs";
 
 function FacebookIcon(props:any) {
   return (
@@ -57,16 +58,16 @@ export default function Component() {
             <div>
               <h2 className="text-2xl font-semibold">Social Media</h2>
               <div className="mt-2 flex items-center space-x-4">
-                <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+                <Link href="https:twitter.com" className="text-muted-foreground hover:text-primary" prefetch={true}>
                   <TwitterIcon className="w-6 h-6" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+                <Link href="https:facebook.com" className="text-muted-foreground hover:text-primary" prefetch={false}>
                   <FacebookIcon className="w-6 h-6" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+                <Link href="https:instagram.com" className="text-muted-foreground hover:text-primary" prefetch={false}>
                   <InstagramIcon className="w-6 h-6" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+                <Link href="https:linkedin.com" className="text-muted-foreground hover:text-primary" prefetch={false}>
                   <LinkedinIcon className="w-6 h-6" />
                 </Link>
               </div>

@@ -4,6 +4,7 @@ import React from 'react';
 import { Button } from './ui/button';
 import { FaStar, FaStarHalf } from 'react-icons/fa';
 import { useToast } from "@/components/ui/use-toast";
+import Link from 'next/link';
 
 function HeroSection() {
   const { toast } = useToast();
@@ -18,6 +19,7 @@ function HeroSection() {
             iscover the Best <br /> of Our Products...
           </h1>
           <h2 className="text-lg md:text-xl lg:text-2xl">Transform Every Meal with Our Elegant Crockery and Stylish Kitchenware</h2>
+          <Link href='/contact'>
           <Button 
             variant={'default'} 
             onClick={() => {
@@ -30,6 +32,8 @@ function HeroSection() {
           >
             Start Trading Now &rarr;
           </Button>
+          </Link>
+          
         </div>
         <h1 className="relative flex justify-center mt-12 px-2 text-base sm:text-lg md:text-xl lg:text-2xl sm:px-5 text-center text-white z-10">
           Rated 4.8 Stars by Our Customers for Quality Crockery -- Excellent 

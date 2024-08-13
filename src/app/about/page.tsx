@@ -19,7 +19,7 @@ function page() {
               </div>
               <div className="grid gap-4">
                 <div className="space-y-2">
-                  <h2 className="text-2xl font-bold">Nishant Shrivastava</h2>
+                  <h2 className="text-2xl font-bold">Nishant Srivastava</h2>
                   <p className="text-muted-foreground md:text-lg">
                     Nishant is the founder and CEO of Rashi trading company. With over 5 years of experience in the industry, he
                     has a deep passion for innovation and delivering exceptional products and services to his customers.

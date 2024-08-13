@@ -4,7 +4,7 @@ import { AspectRatio } from '@radix-ui/react-aspect-ratio';
 import React from 'react';
 import { Button } from './ui/button'; // Assuming you have a Button component available
 import { FaArrowRight } from 'react-icons/fa6';
-import { Ghost } from 'lucide-react';
+import Link from 'next/link';
 
 function InfoPage() {
   return (
@@ -54,9 +54,12 @@ function InfoPage() {
           
       </div>
       <div className='flex justify-center m-4'>
+        <Link href='/products'>
         <Button variant="outline">
           Learn More...
         </Button>
+        </Link>
+        
       </div>
     </div>
   );

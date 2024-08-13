@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import InfoPage from "@/components/InfoPage";
 import DisplayPage from "@/components/DisplayPage";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
     <HeroSection />
     <InfoPage />
     <DisplayPage /> 
-    
+    <Footer />
     </main>
   );
 }
