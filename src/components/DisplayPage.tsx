@@ -17,7 +17,7 @@ function DisplayPage() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-1 lg:grid-cols-2 xl:gap-x-16 ">
+        <div className="grid grid-cols-2 gap- md:grid-cols-1 lg:grid-cols-2 xl:gap-x-16 ">
           <img
             src="/image1.jpg" // Ensure these paths are correct
             width={600}
