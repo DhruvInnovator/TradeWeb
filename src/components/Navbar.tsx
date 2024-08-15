@@ -21,19 +21,19 @@ function Navbar() {
             <Image
               src="/realloogo.png"
               alt="logo"
-              width={100}
+              width={50}
               height={100}
-              className="transform transition-transform duration-300 hover:scale-110"
+              className="transform transition-transform duration-300 scale-110"
             />
           </div>
 
           <div className='md:flex flex-col justify-center text-black'>
-            <h1 className='text-2xl font-semibold'>
+            <h1 className='text-xl font-semibold'>
               𝚁𝚊𝚜𝚑𝚒 𝚃𝚛𝚊𝚍𝚒𝚗𝚐 𝚌𝚘
             </h1>
-            <h5 className='text-sm'>
+            <h6 className='text-sm'>
               HOMEDECORE, KITCHENWARE AND CROCKERY
-            </h5>
+            </h6>
           </div>
         </div>
 
@@ -72,13 +72,13 @@ function Navbar() {
             Services
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'services' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
-          <Link href="/contact" className="relative group text-black hover:text-black pb-1">
-            Contact
-            <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'contact' ? 'w-full' : 'group-hover:w-full'}`}></span>
-          </Link>
           <Link href="/products" className="relative group text-black hover:text-black pb-1">
             Products
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'products' ? 'w-full' : 'group-hover:w-full'}`}></span>
+          </Link>
+          <Link href="/contact" className="relative group text-black hover:text-black pb-1">
+            Contact
+            <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'contact' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
         </div>
       </div>

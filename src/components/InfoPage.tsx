@@ -5,6 +5,7 @@ import React from 'react';
 import { Button } from './ui/button'; // Assuming you have a Button component available
 import { FaArrowRight } from 'react-icons/fa6';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function InfoPage() {
   return (
@@ -12,9 +13,11 @@ function InfoPage() {
       <div className="w-full">
         <h1 className='text-6xl font-bold text-gray-800 m-4 pb-4 font-sans text-center'>Dive Into the quality Products</h1>
         <AspectRatio ratio={22 / 9}>
-          <img
+          <Image
             src="https://images.pexels.com/photos/7130535/pexels-photo-7130535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Image"
+            width={100}
+            height={100}
             className="h-full w-full rounded-md object-cover"
           />
         </AspectRatio>

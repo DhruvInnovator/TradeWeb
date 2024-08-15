@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaArrowDown } from 'react-icons/fa6';
+import Image from 'next/image';
 
 function Page() {
   return (
@@ -21,7 +22,7 @@ function Page() {
           {/* Glassmorphism Container */}
           <div className="mx-auto grid max-w-5xl divide-y divide-border rounded-lg border md:grid-cols-2 md:divide-x md:divide-y-0 bg-white bg-opacity-5 backdrop-blur-md shadow-lg p-6 md:p-10">
             <div className="grid gap-1 p-8 md:p-10">
-              <img
+              <Image
                 src="back4.jpg"
                 alt="Cookware"
                 width={300}
@@ -35,7 +36,7 @@ function Page() {
               </p>
             </div>
             <div className="grid gap-1 p-8 md:p-10">
-              <img
+              <Image
                 src="image4.jpg"
                 alt="Cutlery"
                 width={300}
@@ -49,7 +50,7 @@ function Page() {
               </p>
             </div>
             <div className="grid gap-1 p-8 md:p-10">
-              <img
+              <Image
                 src="image3.jpg"
                 alt="Kitchen Tools"
                 width={300}
@@ -63,7 +64,7 @@ function Page() {
               </p>
             </div>
             <div className="grid gap-1 p-8 md:p-10">
-              <img
+              <Image
                 src="image2.jpg"
                 alt="Bakeware"
                 width={300}

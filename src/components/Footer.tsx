@@ -1,6 +1,7 @@
 import { HandPlatterIcon} from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -9,8 +10,12 @@ function Footer() {
       <div className="container max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-start gap-4">
           <Link href="#" className="flex items-center gap-2">
-            <HandPlatterIcon className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg">Crockery Co.</span>
+            <span className="font-semibold text-lg">
+            <div className='h-32 w-32 flex items-center justify-start'>
+              <Image src='/logo4.png' alt='logo' width='200' height='200'
+              className='object-contain' />
+            </div>
+            </span>
           </Link>
           <p className="text-muted-foreground text-sm">
             Discover the finest handcrafted crockery for your home. Elevate your dining experience with our curated

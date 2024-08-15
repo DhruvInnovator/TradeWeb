@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ShoppingCart } from 'lucide-react';
 import Link from "next/link"
 import React from 'react';
+import Image from 'next/image';
 
 function Page() {
   return (
@@ -28,7 +29,7 @@ function Page() {
               <Link href="#" className="absolute inset-0 z-10">
                 <span className="sr-only">View {product.name}</span>
               </Link>
-              <img
+              <Image
                 src={product.imageSrc}
                 alt={product.alt}
                 width={450}
@@ -65,7 +66,7 @@ function Page() {
                 <Link href="#" className="absolute inset-0 z-10">
                   <span className="sr-only">View Product</span>
                 </Link>
-                <img
+                <Image
                   src={product.imageSrc}
                   alt={product.alt}
                   width={450}

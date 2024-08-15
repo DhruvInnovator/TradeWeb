@@ -34,7 +34,7 @@ export default function MobMenu() {
         <div className="flex flex-col h-full justify-between">
           <nav className="flex flex-col text-lg font-medium gap-6">
             <Link
-              href="#"
+              href="/"
               className="flex items-center gap-4 text-muted-foreground hover:text-foreground border-b border-gray-300 pb-4 mb-4 last:border-b-0"
             >
               <HomeIcon className="w-5 h-5" />
@@ -48,7 +48,7 @@ export default function MobMenu() {
               Services
             </Link>
             <Link
-              href="#"
+              href="/products"  
               className="flex items-center gap-4 text-muted-foreground hover:text-foreground border-b border-gray-300 pb-4 mb-4 last:border-b-0"
             >
               <BoxIcon className="w-5 h-5" />

@@ -10,7 +10,7 @@ function HeroSection() {
   const { toast } = useToast();
 
   return (
-    <div className='p-2 py-20'>
+    <div className='p-2 lg:py-16 sm:py-14'>
       <section className="relative w-full py-18 md:py-32 lg:py-30 bg-fit bg-cover bg-no-repeat bg-center rounded-2xl overflow-hidden" style={{ backgroundImage: 'url(/crockery.jpg)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative container flex flex-col items-center justify-center space-y-6 text-white z-10">
@@ -24,8 +24,8 @@ function HeroSection() {
             variant={'default'} 
             onClick={() => {
               toast({
-                title: "Scheduled: Catch up",
-                description: "Friday, February 10, 2023 at 5:57 PM",
+                title: "Get contact with us now!",
+                description: "We are here to help you with any queries you may have. Contact us now to get started.",
               });
             }}
             className='p-6 rounded-3xl'
