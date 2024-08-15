@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Link } from 'lucide-react'
 import React from 'react'
+import Image from 'next/image'
 
 function page() {
   return (
@@ -59,7 +60,7 @@ function page() {
               </Link>
             </div>
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/back4.jpg"
                 alt="John Doe"
                 width="500"
