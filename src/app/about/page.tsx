@@ -45,7 +45,7 @@ function Page() {
                         publication in 2018
                       </li>
                       <li>
-                        <span className="font-semibold">Innovative Product of the Year</span> - Awarded for Acme's
+                        <span className="font-semibold">Innovative Product of the Year</span> - Awarded for Acme&rsquo;s
                         flagship product in 2021
                       </li>
                     </ul>

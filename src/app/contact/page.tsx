@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { toast } from "@/components/ui/use-toast";
-import { Dirent } from "fs";
 
 function FacebookIcon(props:any) {
   return (
@@ -33,7 +32,7 @@ export default function Component() {
         <div className="text-center space-y-4">
           <h1 className="text-4xl md:text-7xl font-bold">Get in Touch</h1>
           <p className="text-muted-foreground text-lg md:text-xl">
-            Have a question or want to work together? We'd love to hear from you.
+            Have a question or want to work together? We&rsquo;d love to hear from you.
           </p>
         </div>
         <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
