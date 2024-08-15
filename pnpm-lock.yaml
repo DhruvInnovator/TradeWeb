@@ -26,6 +26,9 @@ dependencies:
   clsx:
     specifier: ^2.1.1
     version: 2.1.1
+  csstype:
+    specifier: 3.0.0
+    version: 3.0.0
   lucide:
     specifier: ^0.427.0
     version: 0.427.0
@@ -1192,8 +1195,12 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
+  /csstype@3.0.0:
+    resolution: {integrity: sha512-7PVEkxNUupmIdJflngQ4EHLYIrAiGEeFiR5gcv0QJRLPcPIUY0m353C7i5xwWgZyKytIaqrIMLOOh+OhUs70pw==}
+    dev: false
+
   /csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpImagem8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
   /d3-array@3.2.4:
     resolution: {integrity: sha512-tdQAmyA18i4J7wprpYq8ClcxZy3SC31QMeByyCFyRt7BVHdREQZ5lpzoe5mFEYZUWe+oq8HBvk9JjpibyEV4Jg==}
