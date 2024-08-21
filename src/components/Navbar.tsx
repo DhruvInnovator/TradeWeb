@@ -5,6 +5,8 @@ import { Button } from './ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobMenu from './MobMenu';
+import { UserButton } from '@clerk/nextjs';
+import { Ghost } from 'lucide-react';
 
 function Navbar() {
   const [activeButton, setActiveButton] = useState<string | null>(null);
@@ -80,6 +82,10 @@ function Navbar() {
             Contact
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'contact' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
+          <button >
+            <UserButton showName />
+          </button>
+          
         </div>
       </div>
     </div>

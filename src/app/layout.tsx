@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 import Navbar from "@/components/Navbar";
+import { ClerkProvider, SignedIn, SignedOut, SignIn } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}> 
-        <Navbar />
-        {children}
-        <Toaster />
-      </body>
-      
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <SignedOut>
+            <div className="min-h-screen flex items-center justify-center">
+              <SignIn routing="hash" />
+            </div>
+          </SignedOut>
+          <SignedIn>
+            <Navbar />
+            <main>{children}</main>
+          </SignedIn>
+          <Toaster />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

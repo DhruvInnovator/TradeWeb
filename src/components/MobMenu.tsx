@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { HomeIcon, ShoppingCartIcon, BoxIcon, InfoIcon, PhoneIcon, MenuIcon } from 'lucide-react';
+import { HomeIcon, ShoppingCartIcon, BoxIcon, InfoIcon, PhoneIcon, MenuIcon, UserIcon } from 'lucide-react';
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { UserButton } from '@clerk/nextjs';
 
 export default function MobMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,6 +69,7 @@ export default function MobMenu() {
               <PhoneIcon className="w-5 h-5" />
               Contact
             </Link>
+            <UserButton showName />
           </nav>
           <Button variant="outline" className="w-full" onClick={handleClose}>
             Close
