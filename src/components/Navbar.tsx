@@ -80,9 +80,7 @@ function Navbar() {
             Contact
             <span className={`absolute left-0 bottom-0 h-[3px] w-0 bg-yellow-500 transition-all duration-300 ease-in-out ${activeButton === 'contact' ? 'w-full' : 'group-hover:w-full'}`}></span>
           </Link>
-          <button >
-            <UserButton showName />
-          </button>
+          
           
         </div>
       </div>

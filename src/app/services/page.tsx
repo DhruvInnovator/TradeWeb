@@ -23,7 +23,7 @@ function Page() {
           <div className="mx-auto grid max-w-5xl divide-y divide-border rounded-lg border md:grid-cols-2 md:divide-x md:divide-y-0 bg-white bg-opacity-5 backdrop-blur-md shadow-lg p-6 md:p-10">
             <div className="grid gap-1 p-8 md:p-10">
               <Image
-                src="back4.jpg"
+                src="/back4.jpg"
                 alt="Cookware"
                 width={300}
                 height={200}
@@ -37,7 +37,7 @@ function Page() {
             </div>
             <div className="grid gap-1 p-8 md:p-10">
               <Image
-                src="image4.jpg"
+                src="/image4.jpg"
                 alt="Cutlery"
                 width={300}
                 height={200}
@@ -51,7 +51,7 @@ function Page() {
             </div>
             <div className="grid gap-1 p-8 md:p-10">
               <Image
-                src="image3.jpg"
+                src="/image3.jpg"
                 alt="Kitchen Tools"
                 width={300}
                 height={200}
@@ -65,7 +65,7 @@ function Page() {
             </div>
             <div className="grid gap-1 p-8 md:p-10">
               <Image
-                src="image2.jpg"
+                src="/image2.jpg"
                 alt="Bakeware"
                 width={300}
                 height={200}

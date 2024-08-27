@@ -18,21 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    
       <html lang="en">
         <body className={inter.className}>
-          <SignedOut>
-            <div className="min-h-screen flex items-center justify-center">
-              <SignIn routing="hash" />
-            </div>
-          </SignedOut>
-          <SignedIn>
             <Navbar />
             <main>{children}</main>
-          </SignedIn>
-          <Toaster />
         </body>
       </html>
-    </ClerkProvider>
   );
 }
