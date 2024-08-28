@@ -63,10 +63,10 @@ function Footer() {
             VIHAR, Ghaziabad, Ghaziabad, Uttar Pradesh, 201001
             <br />
             <br />
-            rashitrading1611@gmail.com
+            <a href="mailto:rashitrading1611@gmail.com">rashitrading1611@gmail.com</a>
             <br />
             <br />
-            +91 88008-66380
+            <a href="tel:+91 88008-66380">+91 88008-66380</a>
           </p>
         </div>
       </div>
