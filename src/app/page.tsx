@@ -10,7 +10,6 @@ export default function Home() {
     <HeroSection />
     <InfoPage />
     <DisplayPage /> 
-    <Footer />
     </main>
   );
 }

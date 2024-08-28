@@ -59,10 +59,11 @@ function Footer() {
         <div className="grid gap-2">
           <h3 className="font-semibold text-base">Contact</h3>
           <p className="text-sm">
-            123 Main Street, Anytown USA
+            H.NO-96-97, GALI NO- 2, GANESH ENCLAVE, BUDH
+            VIHAR, Ghaziabad, Ghaziabad, Uttar Pradesh, 201001
             <br />
             <br />
-            info@crockeryco.com
+            rashitrading1611@gmail.com
             <br />
             <br />
             +91 88008-66380
@@ -72,10 +73,10 @@ function Footer() {
       <div className="container max-w-7xl mt-8 flex flex-col sm:flex-row items-center justify-between">
         <p className="text-sm text-muted-foreground">&copy; 2024 Crockery Co. All rights reserved.</p>
         <div className="flex gap-4 mt-4 sm:mt-0">
-          <Link href="#" className="text-sm hover:underline">
+          <Link href="/policy" className="text-sm hover:underline">
             Privacy Policy
           </Link>
-          <Link href="#" className="text-sm hover:underline">
+          <Link href="/terms" className="text-sm hover:underline">
             Terms of Service
           </Link>
         </div>
