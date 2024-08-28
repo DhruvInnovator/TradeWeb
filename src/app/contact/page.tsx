@@ -50,7 +50,7 @@ export default function Component() {
                 </p>
                 <p>
                   <MapPinIcon className="inline-block w-5 h-5 mr-2" />
-                  123 Main St, Anytown USA
+                  
                 </p>
               </div>
             </div>
